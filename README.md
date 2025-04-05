@@ -32,8 +32,9 @@ sudo ng new <project_name>
 
 **sudo** for Linux and Mac devices for the permission
 - Run a project
+```
 ng serve
-
+```
 now project will be running in the http://localhost:4200 open in any of the browser.
 
 ### 3. Angular Project Structure 
