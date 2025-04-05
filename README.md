@@ -88,7 +88,7 @@ app.component.html
 ```
 Note : dont keep the tags inside html, head or body 
 
-#### Directives : Structural Directives and Attribute Directives
+### Directives : Structural Directives and Attribute Directives
 - Strucural Directives includes *ngFor & *ngIf : to iterate through the element and to check the condition
 - Example:
 app.component.html
