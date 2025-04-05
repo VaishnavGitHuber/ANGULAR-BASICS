@@ -1,0 +1,39 @@
+
+    <h1 style="color: red;">Data Binding techniques</h1>
+    <h2>Interpolation</h2>
+    <p>Name: {{name}}</p>
+    <p>Age: {{age}}</p>
+    <p>Phone Number: {{phNumber}}</p>
+
+    <h2>Property Binding</h2>
+    <input type="text" [value]="name">
+
+    <h2>Two Way Binding</h2>
+    <input type="text" [(ngModel)]='name'>
+    <p>Name: {{name}}</p>
+
+    <h2>Event Binding</h2>
+    <button (click)="show()">Click Me</button>
+
+    <h2>Directives : ngFor & ngIf</h2>
+    <h2>Student Marks</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>SINO</th>
+          <th>Sujectb</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sub of studentMarks"  align="center">
+          <td *ngIf="sub.mark > 70">{{sub.sino}}</td>
+          <td *ngIf="sub.mark > 70">{{sub.subjects}}</td>
+          <td *ngIf="sub.mark > 70">{{sub.mark}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+<router-outlet />
